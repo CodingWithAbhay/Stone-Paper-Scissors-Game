@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+h1 {
+    background-color: #081d31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+.choice {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #081d31;
+    transform: scale(1.1);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+.score p {
+    font-weight: bold;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+    display: block;
+}
+
+
+.msg-container {
+    margin-top: 4rem;
+    padding: 0 1rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    max-width: 90%;
+    min-width: 250px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+    .choices {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .score-board {
+        gap: 2rem;
+        font-size: 1.2rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #081d31;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+body {
+    padding-bottom: 60px;
+}
+
+.msg-container {
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+
+    .msg-container {
+        margin-top: 2rem;
+    }
+}
