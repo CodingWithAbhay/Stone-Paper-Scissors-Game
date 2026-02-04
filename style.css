@@ -89,38 +89,6 @@ img {
     word-wrap: break-word;
 }
 
-@media (max-width: 600px) {
-    .choices {
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
-
-    .choice {
-        height: 110px;
-        width: 110px;
-    }
-
-    img {
-        height: 100px;
-        width: 100px;
-    }
-
-    .score-board {
-        gap: 2rem;
-        font-size: 1.2rem;
-    }
-
-    #user-score,
-    #comp-score {
-        font-size: 2.5rem;
-    }
-
-    #msg {
-        font-size: 1.2rem;
-        padding: 0.8rem 1.5rem;
-    }
-}
-
 footer {
     position: fixed;
     bottom: 0;
@@ -156,7 +124,38 @@ body {
     margin-top: 3rem;
 }
 
+
 @media (max-width: 600px) {
+    .choices {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .choice {
+        height: 110px;
+        width: 110px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .score-board {
+        gap: 2rem;
+        font-size: 1.2rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
     footer {
         font-size: 0.9rem;
         padding: 8px 0;
